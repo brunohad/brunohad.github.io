@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#charade-container {
+    text-align: center;
+}
+
+#charade {
+    font-size: 24px;
+}
+
+#devinette {
+    font-size: 24px;
+}
+
+input {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+}
+
+button2 {
+    margin-top: 1px;
+    padding: 3px 3px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+}

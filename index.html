@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charade App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {
+              console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch(error => {
+              console.error('Service Worker registration failed:', error);
+            });
+        }
+      </script>
+      <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <div id="charade-container">
+        <h1 id="devinette">Loading...</h1>
+        <input type="text" id="user-input" placeholder="Réponse">
+        <button onclick="checkAnswer()">Envoyer</button>
+        <h2 id="bravo"></h2>
+        <p id="result"></p>
+        <button2 type="button" id="previous" onclick="move(-1)">Précédent</button2>  <button2 type="button" id="next" onclick="move(1)">Suivant</button2>
+    
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
