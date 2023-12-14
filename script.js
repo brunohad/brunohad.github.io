@@ -46,6 +46,8 @@ function checkAnswer() {
         // set bravo to "Bravo!"
         const bravoElement = document.getElementById("bravo");
         bravoElement.textContent = "Bravo!";
+        const indiceElement = document.getElementById("indice");
+        indiceElement.innerHTML = "La prochaine devinette est débloquée!<br/>Clique sur le bouton \"Suivant\" quand <br/>tu as trouvé où t'emmène la charade!";
         // print the charade in the result element
         const resultElement = document.getElementById("result");
         resultElement.innerHTML = charades[currentCharadeIndex];
@@ -70,6 +72,9 @@ function move(x) {
     // delete the bravo element
     const bravoElement = document.getElementById("bravo");
     bravoElement.textContent = "";
+    // delete the indice element
+    const indiceElement = document.getElementById("indice");
+    indiceElement.textContent = "";
     displayDevinette();
 }
 

@@ -19,15 +19,14 @@
       <link rel="manifest" href="/manifest.json">
 </head>
 <body>
-    <div>
-        <img src="renneTree.png" alt="tree" id="tree">
-    </div>
     <div id="charade-container">
+        <img src="renneTree.png" alt="tree" id="tree">
         <!-- insert tree image here with small size -->
         <h1 id="devinette">Loading...</h1>
         <input type="text" id="user-input" placeholder="Réponse">
         <button onclick="checkAnswer()">Envoyer</button>
         <h2 id="bravo"></h2>
+        <h3 id="indice" style="font-style: italic;"></h3>
         <p id="result"></p>
         <button2 type="button" id="previous" onclick="move(-1)">Précédent</button2>  <button2 type="button" id="next" onclick="move(1)">Suivant</button2>
     
