@@ -1,8 +1,10 @@
-const devinettes = ["Que fait une vache quand elle a les yeux fermés?", 
-"Quelle plante ne pousse pas même si on l'arrose?",
-"Pourquoi les souris n'aiment pas les devinettes?",
-"Pourquoi les pigeons roux n'aiment-ils pas l'eau?",
-];
+// const devinettes = ["Que fait une vache quand elle a les yeux fermés?", 
+// "Quelle plante ne pousse pas même si on l'arrose?",
+// "Pourquoi les souris n'aiment pas les devinettes?",
+// "Pourquoi les pigeons roux n'aiment-ils pas l'eau?",
+// ];
+const devinettes = ["Devinette #1", "Devinette #2", "Devinette #3", "Devinette #4"];
+
 const correctAnswers = ["lait concentré", "pied", "langue au chat", "roucoul"];
 const charades = ["Mon premier est la capitale de l'Italie.\nMon second est une voyelle.\nMon troisième est un fleuve d’Europe.\nMon tout est une plante qui sent bon.",
 "Mon premier se balade sur la tête des enfants.\nMon deuxième est le contraire féminin de « moche ».\nQuand on ouvre mon tout, on la referme rapidement.",
