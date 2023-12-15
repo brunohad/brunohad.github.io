@@ -50,10 +50,10 @@ function checkAnswer() {
         const bravoElement = document.getElementById("bravo");
         bravoElement.textContent = "Bravo!";
         const indiceElement = document.getElementById("indice");
-        if (currentCharadeIndex < 4)
-            indiceElement.innerHTML = "La prochaine devinette est débloquée!<br/>Clique sur le bouton \"Suivant\" quand <br/>tu as trouvé où t'emmène la charade!";
+        if (currentCharadeIndex < 3)
+            indiceElement.innerHTML = "La prochaine devinette est débloquée! 🎉 <br/>Fais-toi guider par la charade ci-dessous<br/>pour la trouver,<br/>puis clique sur le bouton \"Suivant\"";
         else
-            indiceElement.innerHTML = "Tu as trouvé toutes les devinettes!<br/>Voici la charade ultime 💪 <br/> Celle qui te guidera au trésor!";
+            indiceElement.innerHTML = "Tu as trouvé toutes les devinettes!<br/>Voici la charade ultime 💪 <br/> Celle qui te guidera au trésor!⚜️";
         // print the charade in the result element
         const resultElement = document.getElementById("result");
         resultElement.innerHTML = charades[currentCharadeIndex];
