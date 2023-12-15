@@ -8,7 +8,8 @@ const devinettes = ["Devinette #1", "Devinette #2", "Devinette #3", "Devinette #
 const correctAnswers = ["lait concentré", "pied", "langue au chat", "roucoul"];
 const charades = ["Mon premier est la capitale de l'Italie.\nMon second est une voyelle.\nMon troisième est un fleuve d’Europe.\nMon tout est une plante qui sent bon.",
 "Mon premier se balade sur la tête des enfants.\nMon deuxième est le contraire féminin de « moche ».\nQuand on ouvre mon tout, on la referme rapidement.",
-"Les trains finissent leur voyage dans mon premier.\nMon deuxième augmente chaque année.\nMon tout est un espace petit mais très pratique!"]
+"Les trains finissent leur voyage dans mon premier.\nMon deuxième augmente chaque année.\nMon tout est un espace petit mais très pratique!",
+"Pour fêter la nouvelle année, on s’embrasse sous mon premier.\nMon second est un préfixe qui indique la répétition.\nMon troisième prend son temps.\nMon quatrième est un nombre premier inférieur à 5.\nMon tout s’amuse à cacher le trésor."]
 
 // replace all elements of charades \n with <br/>
 for (let i = 0; i < charades.length; i++) {
@@ -49,7 +50,10 @@ function checkAnswer() {
         const bravoElement = document.getElementById("bravo");
         bravoElement.textContent = "Bravo!";
         const indiceElement = document.getElementById("indice");
-        indiceElement.innerHTML = "La prochaine devinette est débloquée!<br/>Clique sur le bouton \"Suivant\" quand <br/>tu as trouvé où t'emmène la charade!";
+        if (currentCharadeIndex < 4)
+            indiceElement.innerHTML = "La prochaine devinette est débloquée!<br/>Clique sur le bouton \"Suivant\" quand <br/>tu as trouvé où t'emmène la charade!";
+        else
+            indiceElement.innerHTML = "Tu as trouvé toutes les devinettes!<br/>Voici la charade ultime 💪 <br/> Celle qui te guidera au trésor!";
         // print the charade in the result element
         const resultElement = document.getElementById("result");
         resultElement.innerHTML = charades[currentCharadeIndex];
