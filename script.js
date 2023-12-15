@@ -38,6 +38,8 @@ function displayDevinette() {
         nextButton.style.visibility = "visible";
     }
 
+    document.getElementById("user-input").disabled = false;
+
 }
 
 function checkAnswer() {
