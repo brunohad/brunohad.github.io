@@ -31,8 +31,8 @@ function displayDevinette() {
     } else {
         previousButton.style.visibility = "visible";
     }
-    if (currentCharadeIndex >= score)
-    nextButton.style.visibility = "hidden";
+    if ((currentCharadeIndex == devinettes.length-1) | (currentCharadeIndex >= score))
+        nextButton.style.visibility = "hidden";
     else {
         nextButton.style.visibility = "visible";
     }
@@ -67,7 +67,7 @@ function checkAnswer() {
 
 // build previous and next functions
 function move(x) {
-    currentCharadeIndex = (currentCharadeIndex + x) % charades.length;
+    currentCharadeIndex = (currentCharadeIndex + x) % devinettes.length;
     // delete the result element
     const resultElement = document.getElementById("result");
     resultElement.textContent = "";
