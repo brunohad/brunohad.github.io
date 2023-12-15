@@ -51,7 +51,7 @@ function checkAnswer() {
         bravoElement.textContent = "Bravo!";
         const indiceElement = document.getElementById("indice");
         if (currentCharadeIndex < 3)
-            indiceElement.innerHTML = "La prochaine devinette est débloquée! 🎉 <br/>Fais-toi guider par la charade ci-dessous<br/>pour la trouver,<br/>puis clique sur le bouton \"Suivant\"";
+            indiceElement.innerHTML = "La prochaine devinette est débloquée! 🎉 <br/>Trouve-la à l'aide de la charade ci-dessous,<br/>puis clique sur le bouton \"Suivant\"";
         else
             indiceElement.innerHTML = "Tu as trouvé toutes les devinettes!<br/>Voici la charade ultime 💪 <br/> Celle qui te guidera au trésor!⚜️";
         // print the charade in the result element
