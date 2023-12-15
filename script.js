@@ -53,12 +53,13 @@ function checkAnswer() {
         if (currentCharadeIndex < 3)
             indiceElement.innerHTML = "La prochaine devinette est débloquée! 🎉 <br/>Trouve-la à l'aide de la charade ci-dessous,<br/>puis clique sur le bouton \"Suivant\"";
         else
-            indiceElement.innerHTML = "Tu as trouvé toutes les devinettes!<br/>Voici la charade ultime 💪 <br/> Celle qui te guidera au trésor!⚜️";
+            indiceElement.innerHTML = "Tu as trouvé toutes les devinettes!<br/>Voici la charade ultime 💪<br/> Celle qui te guidera au trésor!🤑";
         // print the charade in the result element
         const resultElement = document.getElementById("result");
         resultElement.innerHTML = charades[currentCharadeIndex];
         // delete the user input
         document.getElementById("user-input").value = "";
+        document.getElementById("user-input").disabled = true;
 
         score++;
 

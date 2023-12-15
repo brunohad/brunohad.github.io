@@ -14,7 +14,8 @@ body {
 }
 
 #charade {
-    font-size: 24px;
+    font-size: 14px;
+    font-style: italic;
 }
 
 #devinette {
@@ -22,8 +23,7 @@ body {
 }
 
 #indice {
-    font-size: 12px;
-    font-style: italic;
+    font-size: 14px;
 }
 
 input {
